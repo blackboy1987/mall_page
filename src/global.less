@@ -1,0 +1,118 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+a{
+  outline: medium none;
+  color: #333;
+}
+a:hover{
+  color: #F30213 !important;
+}
+a:link, a:visited, a:active {
+  text-decoration: none;
+  outline: medium none;
+}
+fieldset, img {
+  border: medium none;
+  vertical-align: middle;
+}
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, em, strong, table, th, td {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+}
+input[type="submit"], input.submit, a.submit {
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #48CFAE;
+  display: block;
+  height: 30px;
+  padding: 0 20px;
+  border-radius: 3px;
+  border: none 0;
+  cursor: pointer;
+}
+input, button, select, textarea {
+  outline: none;
+}
+input[type="text"], input[type="password"], input.text, input.password {
+  font: 12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;
+  color: #777;
+  background-color: #FFF;
+  vertical-align: top;
+  display: inline-block;
+  min-height: 20px;
+  padding: 5px;
+  border: solid 1px #E6E9EE;
+  outline: 0 none;
+}
+input[type="text"]:focus, input[type="password"]:focus, input.text:focus, input.password:focus, textarea:focus {
+  color: #333;
+  border-color: #CCD0D9;
+  outline: 0 none;
+}
+i, cite, em {
+  font-style: normal;
+}
+body, button, input, select, textarea {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+  color: #666;
+}
+strong {
+  font-weight: bold;
+}
