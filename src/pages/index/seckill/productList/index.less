@@ -1,0 +1,79 @@
+.skUl{
+  .skItems{
+    height: 225px;
+    padding: 0 15px;
+    border-left: 1px solid #e7e7e7;
+    .skGoodsInfo{
+      position: relative;
+      text-align: center;
+      .skLink{
+        &:hover{
+          img{
+            transform: translateY(-5px);
+          }
+        }
+        display: block;
+        img{
+          width: 130px;
+          height: 130px;
+          margin: 17px auto;
+          -webkit-transition: -webkit-transform .4s ease;
+          transition: -webkit-transform .4s ease;
+          -moz-transition: transform .4s ease,-moz-transform .4s ease;
+          -moz-transition: transform .4s ease, -moz-transform .4s ease;
+          transition: transform .4s ease;
+          transition: transform .4s ease, -webkit-transform .4s ease, -moz-transform .4s ease;
+          transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease;
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
+          max-width: 100%;
+          display: block;
+        }
+        .skName{
+          color: #999;
+          display: block;
+          width: 100%;
+          overflow: hidden;
+          font-size: 12px;
+          height: 32px;
+          text-align: left;
+          line-height: 16px;
+          word-break: break-all;
+          word-wrap: break-word;
+        }
+      }
+      .skShadow{
+        position: absolute;
+        left: 0;
+        top: 118px;
+        text-align: center;
+        width: 170px;
+        height: 20px;
+        background: url('../../../../assets/active.png') no-repeat -340px 0;
+      }
+    }
+    .skPrice{
+      padding: 3px 0;
+      height: 25px;
+      .priceNew{
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 4px;
+        color: #f1352b;
+      }
+      .priceOriginal{
+        text-decoration: line-through;
+        font-size: 12px;
+        color: #999;
+      }
+    }
+  }
+  .prev{
+    left:0;
+  }
+  .next{
+    right: 0;
+  }
+}

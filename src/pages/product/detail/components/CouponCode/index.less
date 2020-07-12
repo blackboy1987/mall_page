@@ -1,0 +1,106 @@
+.couponCode{
+  font-size: 0;
+  dt{
+    text-align: left;
+    width: 60px;
+    padding-left: 10px;
+    font-family: simsun;
+    color: #999;
+    font-size: 12px;
+    line-height: 30px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    *display: inline;
+    min-height: 30px;
+    *zoom: 1;
+  }
+  dd{
+    text-align: left;
+    width: 520px;
+    font-size: 12px;
+    line-height: 30px;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    *display: inline;
+    min-height: 30px;
+    *zoom: 1;
+  }
+  .voucherBlock{
+    display: block;
+    .voucherItem{
+      &:hover{
+        background-color: #FEF4F4;
+      }
+      position: relative;
+      float: left;
+      height: 16px;
+      margin-right: 13px;
+      margin-top: 6px;
+      white-space: nowrap;
+      padding-left: 2px;
+      text-align: center;
+      border-top: 1px solid #df3033;
+      border-bottom: 1px solid #df3033;
+      background: #ffdedf;
+      font-size: 14px;
+      line-height: 15px;
+      cursor: pointer;
+      s{
+        left: 0;
+        background-position: -2px -200px;
+        position: absolute;
+        top: -1px;
+        display: block;
+        width: 2px;
+        height: 18px;
+        overflow: hidden;
+        background: url('../../../../../assets/2014_ncs_public_img.png') no-repeat;
+        background-position: 0 -200px;
+      }
+      b{
+        right: -2px;
+        position: absolute;
+        top: -1px;
+        display: block;
+        width: 2px;
+        height: 18px;
+        overflow: hidden;
+        background: url('../../../../../assets/2014_ncs_public_img.png') no-repeat;
+        background-position: 0 -200px;
+      }
+      .text{
+        padding: 0 10px;
+        font-size: 12px;
+        color: #df3033;
+      }
+      .number{
+        .yuan{
+          font-weight: 400;
+          font-size: 12px;
+          font-family: Verdana, Tahoma;
+        }
+        .integer{
+          font-weight: 400;
+          font-family: Verdana, Tahoma;
+        }
+        .pointer{
+          display: none;
+          font-weight: 400;
+          font-family: Verdana, Tahoma;
+        }
+        .decimal{
+          display: none;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+      .numberThin{
+
+      }
+    }
+  }
+}

@@ -45,6 +45,10 @@ export default defineConfig({
           path: '/index',
           component: './index',
         },
+        {
+          path: '/product/detail',
+          component: './product/detail',
+        },
       ],
     },
     {

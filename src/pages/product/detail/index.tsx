@@ -2,17 +2,17 @@ import React from "react";
 import Header from "@/pages/index/header";
 import styles from './index.less';
 import Nav from "@/pages/index/nav";
-import Center from "@/pages/index/center";
-import Seckill from "@/pages/index/seckill";
+import Breadcrumb from "@/pages/product/detail/components/Breadcrumb";
+import Detail from "@/pages/product/detail/components/Detail";
 
 
 const Index:React.FC=()=>{
   return (
     <div className={styles.header}>
       <Header />
-      <Nav defaultShow />
-      <Center />
-      <Seckill />
+      <Nav />
+      <Breadcrumb />
+      <Detail />
     </div>
   );
 }

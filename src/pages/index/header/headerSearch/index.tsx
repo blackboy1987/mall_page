@@ -25,6 +25,7 @@ const HeaderSearch:React.FC=()=>{
       setPlaceholder('请输入您要搜索的供求订单关键字');
     }else{
       setPlaceholder(defaultPlaceholder);
+
     }
   }
 

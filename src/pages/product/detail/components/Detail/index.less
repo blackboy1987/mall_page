@@ -1,0 +1,409 @@
+.detailWrap{
+  &:hover{
+    .content{
+      display: block;
+    }
+  }
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #FFF;
+  .topStore{
+    position: absolute;
+    top: -56px;
+    right: 50%;
+    z-index: 9;
+    width: 450px;
+    height: 26px;
+    margin-right: -600px;
+    padding: 10px 0;
+    text-align: right;
+    line-height: 26px;
+    .storeName{
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: top;
+      a{
+        display: block;
+      }
+    }
+    .storeScore{
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+      display: inline-block;
+      margin-right: 10px;
+      .star{
+        .starBg{
+          width: 94px;
+          height: 16px;
+          border-radius: 8px;
+          background: #e6e6e6;
+          overflow: hidden;
+          .starGray{
+            position: relative;
+            width: 80px;
+            height: 14px;
+            margin: 1px 0 0 7px;
+            background: url('../../../../../assets/star-gray.png') left center repeat-x;
+          }
+          .starLight{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 14px;
+            background: url('../../../../../assets/star-light.png') left center repeat-x;
+          }
+        }
+      }
+    }
+    .storeIm{
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: top;
+      .chatOffline{
+        width: auto;
+        height: auto;
+        background: none;
+        line-height: 26px !important;
+        padding: 0;
+        margin: 0;
+        display: block;
+        i.icon{
+          line-height: 999% !important;
+          background: url('../../../../../assets/chat_state_01.png') no-repeat 0 0;
+          vertical-align: top;
+          display: inline-block;
+          *display: inline;
+          width: 21px;
+          height: 21px;
+          margin: 2px 4px 0 0;
+          overflow: hidden;
+          *zoom: 1;
+        }
+        .icon{
+          background-position: 0 -21px;
+        }
+      }
+    }
+    .storeFavorites{
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: top;
+      a{
+        display: block;
+        .icon{
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          vertical-align: top;
+          margin: 4px 4px 0 0;
+          background: url('../../../../../assets/2014_ncs_public_img.png') no-repeat -50px -25px;
+        }
+      }
+    }
+    .content{
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      z-index: 0;
+      width: 215px;
+      text-align: left;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      line-height: 18px;
+      .scoreDetail{
+        padding: 12px 15px 8px;
+        dt{
+          margin-bottom: 8px;
+          font-weight: 600;
+        }
+        dd{
+          display: block;
+          margin-bottom: 6px;
+          overflow: hidden;
+        }
+        .scoreInfo{
+          .scoreDesc{
+            color: #999;
+            float: left;
+          }
+          .scoreDetail{
+            float: left;
+            .number{
+
+            }
+          }
+          .high { color: #e2231a!important}
+          .equal { color: #ff6602!important}
+          .low { color: #3b4!important;}
+        }
+      }
+      .shopIm{
+        border-top: 1px dotted #e6e6e6;
+        margin: 0 15px;
+        padding: 10px 0;
+        display: block;
+        .storeIm{
+          display: inline-block;
+          margin-right: 10px;
+          vertical-align: top;
+          .chatOffline{
+            width: auto;
+            height: auto;
+            background: none;
+            line-height: 26px !important;
+            padding: 0;
+            margin: 0;
+            .icon{
+              background-position: 0 -21px;
+            }
+          }
+        }
+      }
+      .shopQrCode{
+        text-align: center;
+        border-top: 1px dotted #e6e6e6;
+        margin: 0 15px;
+        padding: 14px 0 10px;
+      }
+      .shopBtns{
+        background: #f6f6f6;
+        font-size: 0;
+        text-align: center;
+        a{
+          height: 34px;
+          line-height: 34px;
+          padding: 0;
+          margin-right: 8px;
+          font-size: 12px;
+          _padding-top: 10px;
+          _height: 24px;
+          border: none;
+          background: #f6f6f6;
+          .icon{
+            display: inline-block;
+            vertical-align: middle;
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            background: url('../../../../../assets/2014_ncs_public_img.png') no-repeat;
+          }
+        }
+        .separator{
+          margin: 0 8px;
+          background: #d1d1d1;
+          width: 1px;
+          height: 14px;
+          overflow: hidden;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .enterShop{
+          .icon{
+            background-position: -50px -25px;
+          }
+        }
+        .followShop{
+          .icon{
+            background-position: -50px -45px;
+          }
+        }
+      }
+    }
+  }
+  .detail{
+    position: relative;
+    z-index: 2;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #FFF;
+    .goodsPicture{
+      display: block;
+      position: relative;
+      z-index: 999;
+      width: 352px;
+      height: 480px;
+      float: left;
+      text-align: center;
+      .magicZoomBigImageCont{
+        overflow: hidden;
+        z-index: 100;
+        top: -10000px;
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        opacity: 1;
+        left: 365px;
+        background: #ffffff;
+        border: 1px solid #999;
+      }
+      .controller{
+        position: absolute;
+        z-index: 1;
+        bottom: 40px;
+        left: 0;
+        width: 352px;
+        height: 54px;
+        margin: 10px auto 0 auto;
+        a{
+          width: 50px;
+          height: 50px;
+          background-color: #FFF;
+          text-align: center;
+          vertical-align: middle;
+          display: table-cell;
+          *display: block;
+          overflow: hidden;
+          border: solid 2px #FFF;
+          im{
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+        .cBtn{
+          &:hover{
+            background-color: #FAFAFA;
+            color: #e4393c;
+            border-color: #F1F1F1;
+          }
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          height: 54px;
+          width: 18px;
+          padding: 0;
+          border: solid 1px #FFF;
+          -moz-border-radius: 2px;
+          border-radius: 2px;
+          background-color: #FFF;
+          text-align: center;
+          font-size: 18px;
+          line-height: 56px;
+          color: #AAA;
+        }
+        .prev{
+          left: 5px;
+        }
+        .next{
+          right: 5px;
+        }
+        ul{
+          position: absolute;
+          top: 0;
+          left: 0;
+          white-space: nowrap;
+        }
+        li{
+          float: left;
+          width: 54px;
+          height: 54px;
+          margin: 0 4px;
+          a{
+            img{
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+        }
+        .goodsPicBox{
+          position: absolute;
+          top: 0;
+          left: 21px;
+          width: 310px;
+          height: 54px;
+          overflow: hidden;
+          .current{
+            border-color: #e4393c;
+          }
+        }
+      }
+    }
+    .goodsSummary{
+      position: relative;
+      z-index: 2;
+      background-color: transparent;
+      float: left;
+      width: 590px;
+      margin-left: 30px;
+      .skuNme{
+        margin-bottom: 5px;
+        padding-top: 10px;
+        font: 700 16px Arial, "microsoft yahei";
+        line-height: 28px;
+        color: #666;
+        .goodsTag{
+          display: none;
+          vertical-align: middle;
+          overflow: hidden;
+          height: 16px;
+          padding: 0 5px;
+          margin-right: 5px;
+          -moz-border-radius: 2px;
+          border-radius: 2px;
+          background: #CCC;
+          font: 12px/16px "Helvetica Neue", "Hiragino Sans GB", SimSun, serif;
+          color: #fff;
+        }
+      }
+      .skuNews{
+        color: #e4393c;
+        margin-bottom: 5px;
+      }
+      .meta{
+        background-image: url('../../../../../assets/ncs_meta_bg.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        -moz-background-size: cover;
+        background-size: cover;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        position: relative;
+
+        .memberIsLogin{
+          font-size: 0;
+          dt{
+            text-align: left;
+            width: 60px;
+            padding-left: 10px;
+            font-family: simsun;
+            color: #999;
+            font-size: 12px;
+            line-height: 30px;
+            vertical-align: top;
+            letter-spacing: normal;
+            word-spacing: normal;
+            display: inline-block;
+            *display: inline;
+            min-height: 30px;
+            *zoom: 1;
+          }
+          dd{
+            color: #999;
+            text-align: left;
+            width: 520px;
+            font-size: 12px;
+            line-height: 30px;
+            vertical-align: top;
+            letter-spacing: normal;
+            word-spacing: normal;
+            display: inline-block;
+            *display: inline;
+            min-height: 30px;
+            *zoom: 1;
+            a{
+              color: #999;
+              margin: 0 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
